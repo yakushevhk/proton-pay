@@ -1,0 +1,66 @@
+@import './components/assets/variables.scss';
+
+
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: var(--font);
+  background-color: var(--color-bg);
+  padding: 42px 0;
+  color: var(--color-white);
+  min-width: 280px;
+  max-width: 2200px;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+p {
+  font-family: var(--font);
+  font-size: var(--size-subtitle);
+  letter-spacing: 1px;
+}
+
+.container {
+  padding: 0 62px;
+
+  @media screen and (max-width: 420px) {
+    padding: 0 20px;
+  }
+
+  @media screen and (min-width: 750px) {
+    padding: 0 100px;
+  }
+  @media screen and (min-width: 810px) {
+    padding: 0 80px;
+  }
+}
+
+.button {
+  background-color: var(--color-white);
+  border: 2px solid transparent;
+  color: var(--color-black);
+  font-size: var(--size-primary);
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 17px 0 15px 0;
+  cursor: pointer;
+  &:hover {
+    background-color: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+  }
+}
+
+p, button, a {
+  font-weight: var(--weight-thin);
+}

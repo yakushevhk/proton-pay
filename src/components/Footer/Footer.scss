@@ -1,0 +1,30 @@
+@import "../assets/variables.scss";
+
+.footer-container {
+    margin-top: 80px;
+
+    &__rights {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+
+        > button {
+            background-color: transparent;
+            text-decoration: none;
+            color: var(--color-white);
+            font-size: var(--size-primary-variant);
+            cursor: pointer;
+            text-align: center;
+
+            &:hover {
+                color: var(--color-shadowed);
+            }
+        }
+    }
+
+    &__copyright {
+        color: rgba(255, 255, 255, 0.37);
+        text-align: center;
+        margin-top: 52px;
+    }
+}

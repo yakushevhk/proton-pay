@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@font-face {
+    font-family: "Neue Machina Light";
+    src: url('./fonts/NeueMachina-Light.otf');
+  }
+  @font-face {
+    font-family: "PP Neue Machina";
+    src: url('./fonts/PPNeueMachina-InktrapRegular.otf');
+  }
+  @font-face {
+    font-family: "PP NeueMachina Bold";
+    src: url('./fonts/PPNeueMachina-InktrapUltrabold.otf');
+  }
+  @font-face {
+    font-family: "";
+    src: url('');
+  }
+  @font-face {
+    font-family: "";
+    src: url('');
+  }
+  @font-face {
+    font-family: "";
+    src: url('');
+  }
+  @font-face {
+    font-family: "";
+    src: url('');
+  }
+
+
+:root {
+    //colors
+    --color-white: #FFFFFF;
+    --color-shadowed: rgba(255, 255, 255, 0.28);
+    --color-black: #000000;
+    --color-bg: #1E1E1E;
+
+    //FONTS
+    --size-title: 30px;
+    --big-size: 36px;
+    --size-subtitle: 24px;
+    --size-primary: 18px;
+    --size-primary-variant: 20px;
+    --size-text: 16px;
+    --font-title: "PP NeueMachina Bold";
+    --font: "PP Neue Machina";
+    --font-subtitle: "Neu Machina Light";
+    --weight-thin: 400;
+    --weight-bold: 800;
+
+    @media screen and (max-width: 420px) {
+        --size-title: 26px;
+        --big-size: 29px;
+        --size-subtitle: 19px;
+        --size-primary: 22px;
+        --size-primary-variant: 22px;
+        --size-text: 16px;
+    }
+
+    @media screen and (max-width: 320px) {
+        --size-title: 23px;
+        --big-size: 25px;
+        --size-subtitle: 17px;
+        --size-primary: 18px;
+        --size-primary-variant: 17px;
+        --size-text: 14px;
+    }
+
+    @media screen and (min-width: 1210px) {
+        --size-title:35px;
+        --big-size: 40px;
+        --size-subtitle: 28px;
+        --size-primary: 22px;
+        --size-primary-variant: 17px;
+        --size-text: 19px;
+    }
+    @media screen and (min-width: 1850px) {
+        --size-title:39px;
+        --big-size: 45px;
+        --size-subtitle: 32px;
+        --size-primary: 28px;
+        --size-primary-variant: 22px;
+        --size-text: 22px;
+    }
+}
+
+
+

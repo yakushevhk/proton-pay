@@ -1,0 +1,117 @@
+@import "../assets/variables.scss";
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    > button {
+        position: absolute;
+        top: -10px;
+        left: 55px;
+        background-color: transparent;
+        cursor: pointer;
+
+        @media screen and (max-width: 420px) {
+            left: 10px;
+        }
+
+        &:active {
+            transform: translateY(1px);
+        }
+    }
+
+    > h2 {
+        font-family: var(--font-title);
+        font-size: var(--size-title);
+        margin-top: 40px;
+        margin-bottom: 33px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 33px;
+
+        @media screen and (min-width: 1210px) {
+            margin-bottom: 65px;
+        }
+
+        > h3 {
+            font-size: var(--size-subtitle);
+            font-weight: var(--weight-thin);
+            margin-bottom: 23px;
+
+            @media screen and (min-width: 1210px) {
+                margin-bottom: 30px;
+            }
+        }
+
+        > p {
+            font-size: var(--size-text);
+
+            > a {
+                text-decoration: underline;
+                cursor: pointer;
+                color: var(--color-white);
+            }
+        }
+    }
+
+    &__cost {
+        padding: 35px;
+        padding-right: 20px;
+        background: url("../assets/images/Order/bg.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 33px;
+
+        @media screen and (min-width: 1210px) {
+            margin-bottom: 65px;
+        }
+
+        > p {
+            width: fit-content;
+        }
+    }
+
+    > form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            gap: 33px;
+            margin-bottom: 46px;
+
+            @media screen and (min-width: 1210px) {
+                gap: 65px;
+                margin-bottom: 70px;
+            }
+
+            > input {
+                font-size: var(--big-size);
+                color: var(--color-shadowed);
+                background-color: transparent;
+                border: none;
+                font-family: var(--font);
+            }
+        }
+
+        > p {
+            font-size: var(--size-text);
+            margin-bottom: 46px;
+
+            @media screen and (min-width: 1210px) {
+                margin-bottom: 65px;
+            }
+        }
+    }
+}

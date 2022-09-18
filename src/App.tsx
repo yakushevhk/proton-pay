@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Description from './components/Description/Description';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import MakeOrder from './components/MakeOrder/MakeOrder';
+import Order from './components/Order/Order';
+import Rules from './components/Rules/Rules';
+import './index.scss';
+import {text} from './rules'
 
 function App() {
+  const [state, setState] = useState<string>("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {
+        state === "FAQ" ? <Rules setState={setState} state={state} elements={text.faq.elements} title={text.faq.title} /> 
+        : state === "user-agreement" ? <Rules setState={setState} state={state} text={text.userAgreement.text} title={text.userAgreement.title} />
+        : state === "rights" ? <Rules setState={setState} state={state} text={text.rights.text} title={text.rights.title} />
+        : state === "contacts" ? <Rules setState={setState} state={state} contacts={text.contacts.elements} title={text.contacts.title} />
+        : state === "order" ? <Order setState={setState} />
+        : 
+        <>
+          <Header setState={setState}/>
+          <MakeOrder setState={setState}/>
+          <Description />
+          <Footer state={state} setState={setState} />
+        </>
+
+      }
+    </>
   );
 }
 
