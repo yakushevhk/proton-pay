@@ -14,7 +14,7 @@ interface RulespProps {
 const Rules: FC<RulespProps> = ({setState, elements, text, state, title, contacts}) => {
   return (
     <div className="rules-container container">
-        <button onClick={() => setState("")}>
+        <button className="arrow" onClick={() => setState("")}>
           <img src={arrow} alt="arrow-pic" />
         </button>
         <div 

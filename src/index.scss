@@ -64,3 +64,29 @@ p {
 p, button, a {
   font-weight: var(--weight-thin);
 }
+
+.arrow {
+    position: absolute;
+    top: -10px;
+    left: 24px;
+    background-color: transparent;
+    cursor: pointer;
+
+    @media screen and (max-width: 420px) {
+        left: 18px;
+    }
+    @media screen and (min-width: 810px) {
+        left: 35px;
+    }
+
+    > img {
+      height: 20px;
+      @media screen and (max-width: 850px) {
+        height: 20px;
+      }
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+}

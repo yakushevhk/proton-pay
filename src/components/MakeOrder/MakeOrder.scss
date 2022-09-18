@@ -82,8 +82,22 @@
             width: 100%;
             align-items: center;
 
+            @media screen and (min-width: 850px) {
+                gap: 30px;
+            }
+            @media screen and (min-width: 1210px) {
+                gap: 40px;
+            }
+            @media screen and (min-width: 1850px) {
+                gap: 50px;
+            }
+
             &__img {
                 background: url(../assets/images/makeorder/bg.svg);
+                background: url("../assets/images/Order/bg.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
                 display: flex;
                 align-items: center;
                 justify-content: center;

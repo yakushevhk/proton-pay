@@ -13,7 +13,7 @@ const Header : FC<HeaderProps> = ({setState}) => {
         <p className='header-container__text__subtitle'>Оплачивайте товары и сервисы по всему миру</p>
       </div>
       <div className="header-container__buttons">
-        <button>Вход</button>
+        <button onClick={() => setState("login")}>Вход</button>
       </div>
     </header>
   )
