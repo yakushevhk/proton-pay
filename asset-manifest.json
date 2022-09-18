@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/proton-pay/static/css/main.c00ab40c.css",
-    "main.js": "/proton-pay/static/js/main.b76dd11d.js",
+    "main.css": "/proton-pay/static/css/main.c40c110e.css",
+    "main.js": "/proton-pay/static/js/main.fe4d0e8f.js",
     "static/media/bg.svg": "/proton-pay/static/media/bg.77b1b625714583f462c6.svg",
     "static/media/slide-3.svg": "/proton-pay/static/media/slide-3.f26f9bd693268875ef68ae49bb753429.svg",
     "static/media/slide-2.svg": "/proton-pay/static/media/slide-2.45f4a93c711a2ab0e89f8c0cbf780cc3.svg",
@@ -12,11 +12,11 @@
     "static/media/NeueMachina-Light.otf": "/proton-pay/static/media/NeueMachina-Light.e1fb3b2574d18010b9ff.otf",
     "index.html": "/proton-pay/index.html",
     "static/media/arrow.svg": "/proton-pay/static/media/arrow.4b019d6e02eb9b97f19e11ee61635385.svg",
-    "main.c00ab40c.css.map": "/proton-pay/static/css/main.c00ab40c.css.map",
-    "main.b76dd11d.js.map": "/proton-pay/static/js/main.b76dd11d.js.map"
+    "main.c40c110e.css.map": "/proton-pay/static/css/main.c40c110e.css.map",
+    "main.fe4d0e8f.js.map": "/proton-pay/static/js/main.fe4d0e8f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c00ab40c.css",
-    "static/js/main.b76dd11d.js"
+    "static/css/main.c40c110e.css",
+    "static/js/main.fe4d0e8f.js"
   ]
 }
