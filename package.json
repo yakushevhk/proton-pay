@@ -1,7 +1,7 @@
 {
   "name": "proton-pay",
   "version": "0.1.0",
-  "homepage": "https://gamza222.github.io/proton-pay/",
+  "homepage": "https://protonpay.ru",
   "private": true,
   "dependencies": {
     "@splitbee/web": "^0.3.0",
