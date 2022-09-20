@@ -15,7 +15,7 @@ const MakeOrder: FC<MakeOrderProps> = ({setState}) => {
             <img src={card} alt="card" />
         </div>
         <div className='makeorder-container__content'>
-            <p className="makeorder-container__content__text">ProtonPay - не “Необанк”,  Мы - провайдер между пользователем и миром платежей. Работаем на основе Сингапурского и Американского банках</a></p>
+            <p className="makeorder-container__content__text">ProtonPay - не “Необанк”,  Мы - провайдер между пользователем и миром платежей. Работаем на основе Сингапурского банка</p>
             <div className="makeorder-container__content__interaction">
                 <button onClick={() => setState("order")} className="button">Заказать карту</button>
                 <div className="makeorder-container__content__interaction__img">
