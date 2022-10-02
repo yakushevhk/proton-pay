@@ -46,7 +46,7 @@ const Order : FC<OrderProps> = ({setState}) => {
                 <input type="text" onChange={(e) => setTg(e.target.value)} id="telegram" name="telegram" placeholder='Telegram' required/>
             </div>
             <p>Мы пришлем Вам карту до трех календарных дней</p>
-            <a className='button' onClick={sendMessage} href="https://capu.st/bill6782cf7a-4267">Заявка</a>
+            <a className='button' onClick={sendMessage} href="https://t.me/teterin323">Заявка</a>
         </form>
     </div>
   )
