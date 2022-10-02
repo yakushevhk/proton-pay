@@ -34,10 +34,10 @@ const Order : FC<OrderProps> = ({setState}) => {
         <h2>ProtonPay</h2>
         <div className="order-container__text">
             <h3>Заказать карту</h3>
-            <p>Оформляя карту вы соглашаетесь с <a href="">Пользовательским соглашением и условиями использования</a></p>
+            <p>Оформляя карту вы соглашаетесь с <a href="https://protonpay.ru">Пользовательским соглашением и условиями использования</a></p>
         </div>
         <div className="order-container__cost">
-            <p>Стоимость - 3000 рублей до 28 сентября. Далее - 5500 рублей</p>
+            <p>Стоимость - 7000 рублей до 4 октября. Далее - 12000 рублей</p>
         </div>
         <form action="">
             <div>
@@ -46,7 +46,7 @@ const Order : FC<OrderProps> = ({setState}) => {
                 <input type="text" onChange={(e) => setTg(e.target.value)} id="telegram" name="telegram" placeholder='Telegram' required/>
             </div>
             <p>Мы пришлем Вам карту до трех календарных дней</p>
-            <a className='button' onClick={sendMessage} href="https://capu.st/bill6782cf7a-4267">Оплатить</a>
+            <a className='button' onClick={sendMessage} href="https://capu.st/bill6782cf7a-4267">Заявка</a>
         </form>
     </div>
   )

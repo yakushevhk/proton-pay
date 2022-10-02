@@ -19,7 +19,7 @@ const MakeOrder: FC<MakeOrderProps> = ({setState}) => {
             <div className="makeorder-container__content__interaction">
                 <button onClick={() => setState("order")} className="button">Заказать карту</button>
                 <div className="makeorder-container__content__interaction__img">
-                    <p>Стоимость - 3000<br/> рублей до 28 сентября</p>
+                    <p>Стоимость - 7000<br/> рублей до 4 октября</p>
                 </div>
             </div>
         </div>
